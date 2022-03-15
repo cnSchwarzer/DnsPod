@@ -6,7 +6,7 @@ public class Record {
     [JsonProperty("sub_domain")] public string SubDomain { get; set; }
     [JsonProperty("domain")] public string Domain { get; set; }
     [JsonProperty("types")] public List<string> Types { get; set; } = new();
-    [JsonProperty("nic")] public int Nic { get; set; } = -1;
+    [JsonProperty("nic")] public string NicName { get; set; } = "以太网";
 }
 
 public class Config {
